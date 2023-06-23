@@ -1,0 +1,23 @@
+.col,
+[class*="col-"] {
+    border: 1px solid red;
+    height: 500px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.sidebar {
+    height: 100vh;
+    margin-top: 56px;
+    overflow: auto;
+}
+
+.content {
+    margin-top: 56px;
+    overflow-y: auto;
+}
