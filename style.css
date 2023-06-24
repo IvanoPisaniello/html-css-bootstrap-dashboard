@@ -15,7 +15,6 @@
     min-height: 80px;
 }
 
-body {}
 
 main {
     height: 90vh;
@@ -26,32 +25,6 @@ main {
 .content {
     overflow: auto;
 }
-
-
-.sidebar {
-    border: 1px solid red;
-    overflow: auto;
-    position: fixed;
-}
-
-/* .aside {
-    width: 100px;
-    background-color: black;
-    height: 100vh;
-    display: none;
-    flex-shrink: 0;
-} */
-
-/* .aside-small {
-    width: 50px;
-    background-color: black;
-    height: 680px;
-    flex-shrink: 0;
-} */
-
-/* aside {
-    position: sticky;
-} */
 
 .card {
     min-height: 300px;
