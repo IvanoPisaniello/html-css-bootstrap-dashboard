@@ -1,23 +1,74 @@
 .col,
 [class*="col-"] {
     border: 1px solid red;
-    height: 500px;
+    min-height: 500px;
 }
 
 .navbar {
-    position: fixed;
+
     width: 100%;
-    z-index: 1;
+
 
 }
 
-.sidebar {
-    height: 100vh;
-    margin-top: 56px;
-    overflow: auto;
+.small-col {
+    min-height: 80px;
+}
+
+body {}
+
+main {
+    height: 92vh;
 }
 
 .content {
-    margin-top: 56px;
-    overflow-y: auto;
+    overflow: auto;
+}
+
+
+.sidebar {
+    border: 1px solid red;
+    overflow: auto;
+    position: fixed;
+}
+
+.aside {
+    width: 100px;
+    background-color: black;
+    height: 100vh;
+    display: none;
+    flex-shrink: 0;
+}
+
+.aside-small {
+    width: 50px;
+    background-color: black;
+    height: 680px;
+    flex-shrink: 0;
+}
+
+aside {
+    position: sticky;
+}
+
+.card {
+    min-height: 300px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:992px) {
+
+    .aside-small {
+        display: none;
+    }
+
+    .aside {
+        display: block;
+    }
+
 }
