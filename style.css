@@ -18,8 +18,10 @@
 body {}
 
 main {
-    height: 92vh;
+    height: 90vh;
 }
+
+
 
 .content {
     overflow: auto;
@@ -32,43 +34,25 @@ main {
     position: fixed;
 }
 
-.aside {
+/* .aside {
     width: 100px;
     background-color: black;
     height: 100vh;
     display: none;
     flex-shrink: 0;
-}
+} */
 
-.aside-small {
+/* .aside-small {
     width: 50px;
     background-color: black;
     height: 680px;
     flex-shrink: 0;
-}
+} */
 
-aside {
+/* aside {
     position: sticky;
-}
+} */
 
 .card {
     min-height: 300px;
-}
-
-
-
-
-
-
-
-@media screen and (min-width:992px) {
-
-    .aside-small {
-        display: none;
-    }
-
-    .aside {
-        display: block;
-    }
-
 }
