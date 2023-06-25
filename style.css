@@ -1,7 +1,7 @@
 .col,
 [class*="col-"] {
     border: 1px solid red;
-    min-height: 500px;
+    /* min-height: 500px; */
 }
 
 .navbar {
@@ -10,6 +10,7 @@
 
 
 }
+
 
 .small-col {
     min-height: 80px;
@@ -24,8 +25,4 @@ main {
 
 .content {
     overflow: auto;
-}
-
-.card {
-    min-height: 300px;
 }
