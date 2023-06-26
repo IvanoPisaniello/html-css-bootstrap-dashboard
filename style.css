@@ -34,6 +34,7 @@ main {
     min-height: 95vh;
     overflow: hidden;
     background-image: url(img/sidebar-bg.png);
+    background-color: #061E34;
 }
 
 .badge-header span {
@@ -89,4 +90,16 @@ main {
 
 td:hover {
     background-color: lightgrey;
+}
+
+
+
+.offcanvas {
+    --bs-offcanvas-width: 600px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -138px;
+    margin-top: var(--bs-dropdown-spacer);
 }
