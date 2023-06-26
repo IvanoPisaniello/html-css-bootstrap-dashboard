@@ -1,9 +1,3 @@
-.col,
-[class*="col-"] {
-    /* border: 1px solid red; */
-    /* min-height: 500px; */
-}
-
 .navbar {
 
     width: 100%;
@@ -21,6 +15,9 @@ body {
     min-height: 80px;
 }
 
+.mobile-logo {
+    height: 40px;
+}
 
 main {
     height: calc(100vh - 70px);
@@ -36,10 +33,11 @@ main {
 .sidebar {
     min-height: 95vh;
     overflow: hidden;
+    background-image: url(img/sidebar-bg.png);
 }
 
 .badge-header span {
-    background-color: darkblue;
+    background-color: #165BBA;
 }
 
 .my-table-col {
@@ -70,4 +68,25 @@ main {
 
 .stats-card p {
     font-size: 0.8rem;
+}
+
+.my-nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: white;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s
+}
+
+.my-nav-link:hover {
+    background-color: lightgray;
+    display: inline-block;
+}
+
+td:hover {
+    background-color: lightgrey;
 }

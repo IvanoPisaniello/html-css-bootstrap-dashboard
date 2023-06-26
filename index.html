@@ -17,9 +17,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand navbar-light bg-light p-1">
+        <nav class="navbar navbar-expand navbar-light bg-light p-0">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+                <a class="navbar-brand d-none d-lg-block" href="#"><img src="img/logo.svg" alt=""></a>
+                <a class="navbar-brand d-lg-none" href="#"><img src="img/mobile-logo.png" alt=""
+                        class="mobile-logo"></a>
                 <div class=" navbar-collapse" id="navbarNavDropdown">
                     <div class="container-fluid">
                         <form class="d-flex" role="search">
@@ -39,7 +41,7 @@
                             <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+                            <a class="nav-link text-warning" href="#"><i class="fa-solid fa-bell"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -53,19 +55,19 @@
 
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link" aria-current="page">
+                    <a href="#" class="nav-link my-nav-link" aria-current="page">
                         <i class="fa-solid fa-house"></i>
                         Home
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
+                <li class="nav-item">
+                    <a href="#" class="nav-link my-nav-link">
                         <i class="fa-solid fa-chart-simple"></i>
                         Stats
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="nav-link text-white">
+                <li class="nav-item">
+                    <a href="#" class="nav-link my-nav-link">
                         <i class="fa-solid fa-signal"></i>
                         Signals
                     </a>
@@ -73,9 +75,9 @@
             </ul>
 
             <ul class="nav nav-pills">
-                <li><a href="#" class="nav-link text-white">
-                        <i class="fa-solid fa-signal"></i>
-                        Signals
+                <li class="nav-item"><a href="#" class="nav-link my-nav-link">
+                        <i class="fa-solid fa-gear"></i>
+                        Admin
                     </a></li>
             </ul>
         </div>
@@ -83,25 +85,25 @@
         <div class="d-flex flex-column flex-shrink-0 bg-dark d-lg-none sidebar" style="width: 4.5rem;">
             <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white" aria-current="page">
+                    <a href="#" class="nav-link my-nav-link" aria-current="page">
                         <i class="fa-solid fa-house"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
+                    <a href="#" class="nav-link my-nav-link">
                         <i class="fa-solid fa-chart-simple"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-white">
+                    <a href="#" class="nav-link my-nav-link">
                         <i class="fa-solid fa-signal"></i>
                     </a>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="#" class="nav-link text-white">
-                        <i class="fa-solid fa-signal"></i>
+                    <a href="#" class="nav-link my-nav-link">
+                        <i class="fa-solid fa-gear"></i>
                     </a>
                 </li>
             </ul>
@@ -109,36 +111,53 @@
         <!-- main-content -->
         <div class="content px-1">
             <div class="row">
-                <div class="col-12 small-col bg-primary p-2">
-                    <div class="row">
-                        <div class="col-md-6 badge-header">
+                <div class="col-12 small-col bg-primary p-3">
+                    <div class="row flex-nowrap flex-column flex-md-row gy-3">
+                        <div class="col-md-6 badge-header order-2 order-md-0">
                             <div class="row flex-column">
-                                <div class="col">
-                                    <h3 class="text-light d-inline-block">Boolean</h3>
-                                    <span class="badge  mx-1">Piano blaze</span>
-                                </div>
-                                <div class="col">
-                                    <span class="badge  mx-1">3 app</span><span class="badge mx-1"><i
-                                            class="fa-solid fa-angles-right"></i></span><span
-                                        class="badge mx-1 d-none d-lg-inline-block">boolean
-                                        mobile app</span><span class="badge mx-1 d-none d-lg-inline-block">boolean
-                                        web
-                                        app</span>
-                                    <span class="badge mx-1 d-none d-lg-inline-block">boolean blog
-                                        app</span>
-                                    <span class="badge text-white  mx-1 d-lg-none rounded-5">
-                                        + </span>
+                                <div class="col ">
+                                    <div class="row flex-column">
+                                        <div class="col">
+                                            <h3 class="text-light d-inline-block">Boolean</h3>
+                                            <span class="badge  mx-1">Piano blaze</span>
+                                        </div>
+                                        <div class="col">
+                                            <span class="badge  mx-1">3 app</span><span class="badge mx-1"><i
+                                                    class="fa-solid fa-angles-right"></i></span><span
+                                                class="badge mx-1 d-none d-lg-inline-block">boolean
+                                                mobile app</span><span
+                                                class="badge mx-1 d-none d-lg-inline-block">boolean
+                                                web
+                                                app</span>
+                                            <span class="badge mx-1 d-none d-lg-inline-block">boolean blog
+                                                app</span>
+                                            <span class="badge text-white  mx-1 d-lg-none rounded-5">
+                                                + </span>
 
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 order-3">
                             <p class="text-white">Studenti online negli ultimi 30 minuti</p>
                             <p class="text-white fs-3">125</p>
                         </div>
-                        <div class="col-md-3 text-end">
-                            <span class="text-white">Nuovo Studente</span> <span><button
-                                    class="btn btn-outline-light fs-6">+</button></span>
+                        <div class="col-md-3 text-start text-lg-end order-md-3">
+                            <span class="text-white">Nuovo Studente</span> <span>
+                                <button class="btn btn-outline-light my-btn" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        ...
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -396,6 +415,8 @@
                                         <p>Febbraio: 800</p>
                                         <hr>
                                         <p>marzo: 1500</p>
+                                        <hr>
+                                        <a href="#">Visualizza Report approfindito</a>
                                     </div>
                                 </div>
                             </div>
