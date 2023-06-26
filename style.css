@@ -1,6 +1,6 @@
 .col,
 [class*="col-"] {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* min-height: 500px; */
 }
 
@@ -11,6 +11,11 @@
 
 }
 
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
 
 .small-col {
     min-height: 80px;
@@ -18,11 +23,51 @@
 
 
 main {
-    height: 90vh;
+    height: calc(100vh - 70px);
 }
 
 
 
 .content {
     overflow: auto;
+    flex-grow: 1;
+}
+
+.sidebar {
+    min-height: 95vh;
+    overflow: hidden;
+}
+
+.badge-header span {
+    background-color: darkblue;
+}
+
+.my-table-col {
+    width: 60%;
+    text-align: start;
+}
+
+.table {
+    font-size: 0.6rem;
+}
+
+.my-btn {
+    --bs-btn-padding-x: 0.50rem;
+    --bs-btn-padding-y: 0.15rem;
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 0.8rem;
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    margin: 0 0.1rem;
+
+
+}
+
+.small-avatar {
+    height: 20px;
+    margin-right: 3px;
+}
+
+.stats-card p {
+    font-size: 0.8rem;
 }
