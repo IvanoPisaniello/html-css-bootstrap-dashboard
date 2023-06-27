@@ -21,7 +21,7 @@ main {
 }
 
 .sidebar {
-    min-height: 95vh;
+    min-height: 100%;
     overflow: hidden;
     background-image: url(img/sidebar-bg.png);
     background-color: #061E34;
