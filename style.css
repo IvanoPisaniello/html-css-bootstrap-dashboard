@@ -1,18 +1,10 @@
 .navbar {
-
     width: 100%;
-
-
 }
 
 body {
     height: 100vh;
     overflow: hidden;
-}
-
-
-.small-col {
-    min-height: 80px;
 }
 
 .mobile-logo {
@@ -22,8 +14,6 @@ body {
 main {
     height: calc(100vh - 70px);
 }
-
-
 
 .content {
     overflow: auto;
